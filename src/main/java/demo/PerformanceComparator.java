@@ -32,41 +32,28 @@ public class PerformanceComparator {
 
 		Set set = new HashSet();
 		beginTime = System.currentTimeMillis();
-		twoSumWithSet(array, set, target);
+		twoSum(array, set, target);
 		endTime = System.currentTimeMillis();
 		printTime("HashSet", endTime - beginTime);
 
 		List arrayList = new ArrayList();
 		beginTime = System.currentTimeMillis();
-		twoSumWithList(array, arrayList, target);
+		twoSum(array, arrayList, target);
 		endTime = System.currentTimeMillis();
 		printTime("ArrayList", endTime - beginTime);
 	}
 
-	private void twoSumWithSet(ArrayList array, Set set, int target) {
+	private void twoSum(ArrayList array, Collection collection, int target) {
 		int con = 0;
 
 		for (int i = 0; i < array.size(); i++) {
 			int complement = target - (int) array.get(i);
-			if (set.contains(complement)) { // Key line O(1)
+			if (collection.contains(complement)) { // Key line O(1) for Set and O(n) for Array.
 				con++;
 			}
-			set.add(array.get(i));
+			collection.add(array.get(i));
 		}
-		System.out.println("Two sums founded with Set: " + con);
-	}
-
-	private void twoSumWithList(ArrayList array, List arrayList, int target) {
-		int con = 0;
-
-		for (int i = 0; i < array.size(); i++) {
-			int complement = target - (int) array.get(i);
-			if (arrayList.contains(complement)) { // key Line O(n)
-				con++;
-			}
-			arrayList.add(array.get(i));
-		}
-		System.out.println("Two sums founded with Array: " + con);
+		System.out.println("Two sums founded: " + con);
 	}
 
 	public void stage25(int n, int k) {
