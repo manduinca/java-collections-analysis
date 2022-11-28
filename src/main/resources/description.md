@@ -1,15 +1,24 @@
 # Java Collections #
 
-A little review.
+A little review, but deep.
 
 ## Basic Data Structures ##
 
-### Array ###
+### Static Array ###
+
+* Lineal structure
+* Fast access by index
+* can't insert
+* can't remove
+
+### Dynamic Array ###
 
 * Lineal structure
 * Fast access by index
 * Slow insert by index
 * Slow remove by index
+
+[Array vs Array Lists in Java](https://medium.com/@teamtechsis/java-array-vs-arraylist-b50994c58525)
 
 ### Linked List ###
 
@@ -43,3 +52,5 @@ Many search operations. For example [Two sum problem](https://leetcode.com/probl
 ##  Sources ##
 
 [Algorithms 4th edition](https://algs4.cs.princeton.edu/home/)
+
+[Robert Sedgewick Courses](https://sedgewick.io/courses/algorithms/)
