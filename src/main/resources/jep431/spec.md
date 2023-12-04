@@ -17,6 +17,14 @@ La idea central aquí es mejorar la productividad de los desarrolladores. Esto s
 uniforme de operaciones que se pueden aplicar a un tipo de colección que representa una secuencia de elementos con un 
 orden específico de encuentro.
 
+Collections antes de Java 21.
 ![](https://media.geeksforgeeks.org/wp-content/uploads/20200623124952/Java-Collections-Hierarchy-1.png)
 
+Podemos obervar la inconsistencia en el manejo de los métodos.
+![](inconsistent_methods.png)
+
+Collections en Java 21.
 ![](https://cr.openjdk.org/~smarks/collections/SequencedCollectionDiagram20220216.png)
+
+Ahora podemos usar Sequenced Collection.
+![](sequenced_methods.png)
